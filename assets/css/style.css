@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  40px auto auto 10px;
+    grid-template-areas: "navegador navegador navegador"
+                         "encabezado encabezado encabezado"
+                         "principal principal principal"
+                         "piePagina piePagina piePagina";
+}
+
+.navegador{
+    grid-area: navegador;
+    display: flex;
+    background-color: #C75100;
+    justify-content: center;
+    align-items: center;
+}
+
+.barraNavegacion{
+    display: flex;
+    list-style: none;
+}
+
+.barraNavegacion li{
+    background-color: #C75100;
+}
+
+.barraNavegacion li a{
+    color: white;
+    padding: 5px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.encabezado{
+    grid-area: encabezado;
+}
+
+.contMarca{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.marca{
+    width: auto;
+    font-size: 35px ;
+    color: black;
+    font-style: italic;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: #C75100;
+}
+
+.principal{
+    grid-area: principal;
+    
+}
+
+.titulo{
+    text-align: center;
+    font-size: 25px;
+    background-color: blanchedalmond;
+    color: #C75100;  
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 15px;
+    color: #C75100;
+}
+.cartaProducto{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.producto{
+    width: 250px;
+    padding: 5px;
+    text-align: center;
+}
+
+.nombreProducto{
+    
+    font-size: 20px;
+    color: #C75100;
+    margin: 15px;
+    text-decoration: underline;
+}
+
+.imgProducto{
+    width: 90%;
+}
+
+.piePagina{
+    grid-area: piePagina;
+}
+
+.copy{
+    color: antiquewhite;
+    background-color: #C75100;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+@media(min-width:1200px){
+.contenedor{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px auto auto 10px;
+    grid-template-areas: "navegador navegador navegador navegador"
+                         "encabezado encabezado encabezado encabezado"
+                         "principal principal principal principal"
+                         "piePagina piePagina piePagina piePagina";
+    }   
+
+    .barraNavegacion li a{
+        color: white;
+        padding: 20px;
+        font-size: 28px;
+        text-decoration: none;
+    }
+
+    .marca{
+        font-size: 50px ;
+       }
+
+    .titulo{
+        font-size: 35px;  
+    }
+
+    .subtitulo{
+        font-size: 20px;
+    }
+
+    .producto{
+        width: 400px;
+        padding: 10px;
+    }
+
+    .nombreProducto{
+        font-size: 23px;
+    }
+    
+    .copy{
+    font-size: 20px;
+    }
+
+    }
