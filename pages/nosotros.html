@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/Icono.png" type="image/x-icon">
     <title>Nosotros</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body class="contenedor">
+<body class="container-fluid">
     <nav class="navegador">
         <ul class="barraNavegacion">
             <li><a href="../index.html">Inicio</a></li>
@@ -21,7 +23,7 @@
     </nav>
 
     <header class="encabezado">
-        <h1 class="titulo">Nosotros</h1>
+        <h1 class="col-12 titulo">Nosotros</h1>
     </header>
 
     <main class="principal">
@@ -29,43 +31,46 @@
         <div class="quienesSomos">
         <h2 class="subtitulo">¿Quienes somos?</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, impedit similique ab sed dolore, tenetur et laudantium necessitatibus delectus corrupti autem nemo obcaecati eos quasi aspernatur. Ad, at. Quos, voluptatem?</p>
-        <form action="">
+        
+        <form class="row" action="">
 
-        </div>
+            <div class="col-12 col-xl-6 mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+              </div>
 
-            <fieldset>
-            <legend>Datos</legend>
-            <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre" required>
-            <input type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido" required>
-            <input type="email" name="Correo Electronico" id="Correo Electronico" placeholder="Ingrese su Email" required>
-            <input type="number" name="Telefono de contacto" id="Telefono de contacto" placeholder="Ingrese un telefono de contacto" required>
-            <textarea name="Comentario" id="Comentario" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
-            
-            <div>
-                <div>Desea recibir Newsletter</div>
-                    <label for="Confirmar">Si</label>
-                    <input type="radio" name="Confirmar" value="s">
-                    <label for="Confirmar">No</label>
-                    <input type="radio" name="Confirmar" value="s">
-            </div>
+              <div class="col-12 col-xl-6 mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="email" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+              </div>
 
-            <div>
-                <label for="acepto">Acepta terminos y condiciones</label>
-                <input type="checkbox" name="acepto" value="Si" required>
-            </div>
-            </fieldset>
-            <br>
+              <div class="col-12 col-xl-6 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su mail">
+              </div>
 
-            <input type="reset" value="Limpiar">
-            <input type="submit" value="Enviar Formulario">
+              <div class="col-12 col-xl-6 mb-3">
+                <label for="celular" class="form-label">Celular</label>
+                <input type="email" class="form-control" id="celular" placeholder="Ingrese su celular">
+              </div>
+
+              <div class="col-12 col-xl-9 mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+              </div>
+
+              <input class="btn w-25 m-4" type="submit" value="Enviar">
 
         </form>
             <h3>Instagram</h3>        
             <a href="https://www.instagram.com/linaresreybags/" target="_blank">Instagram</a>
     </main>
     <aside class="secundario"></aside>
-    <footer class="piePagina">
-        <h5 class="copy">© Linares Rey 2022. Todos los derechos reservados</h5>
+    <footer class="row piePagina">
+        <h5 class="col-12 copy">© Linares Rey 2022. Todos los derechos reservados</h5>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>

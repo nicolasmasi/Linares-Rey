@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.contenedor{
+.container-fluid{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3,1fr);
@@ -95,6 +95,7 @@
     color: #C75100;
     margin: 15px;
     text-decoration: underline;
+    text-align: center;
 }
 
 .imgProducto{
@@ -104,6 +105,11 @@
 
 .imgProducto:hover{
     transform: translate(10px,10px) scale(1.1);
+}
+
+.btn{
+    background-color: #C75100;
+    color: white;
 }
 
 .piePagina{
