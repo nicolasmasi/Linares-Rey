@@ -77,33 +77,25 @@
     font-size: 15px;
     color: #C75100;
 }
-.cartaProducto{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-}
 
-.producto{
-    width: 250px;
-    padding: 5px;
+.productos{
     text-align: center;
 }
 
 .nombreProducto{
-    
     font-size: 20px;
     color: #C75100;
     margin: 15px;
     text-decoration: underline;
-    text-align: center;
+    
 }
 
-.imgProducto{
-    width: 85%;
+.img-fluid{
+    width: 80%;
     transition: all 1s;
 }
 
-.imgProducto:hover{
+.img-fluid:hover{
     transform: translate(10px,10px) scale(1.1);
 }
 
@@ -111,6 +103,23 @@
     background-color: #C75100;
     color: white;
 }
+
+.botones{
+    display: flex;
+}
+
+.boton{
+    background-color: #C75100;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.boton:active{
+    background-color: black;
+}
+
 
 .piePagina{
     grid-area: piePagina;
