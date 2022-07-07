@@ -1,0 +1,20 @@
+.navegador{
+    grid-area: navegador;
+    display: flex;
+    background-color: $colorPrincipal;
+    justify-content: center;
+    align-items: center;
+    .barraNavegacion{
+        display: flex;
+        list-style: none;
+        li{
+            background-color: $colorPrincipal;
+            a{
+                color: white;
+                padding: 5px;
+                font-size: 22px;
+                text-decoration: none;
+            }
+        }
+    }
+}

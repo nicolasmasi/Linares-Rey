@@ -1,0 +1,9 @@
+.piePagina{
+    grid-area: piePagina;
+    .copy{
+        color: antiquewhite;
+        background-color: $colorPrincipal;
+        text-align: center;
+        width: 100%;
+    }
+}

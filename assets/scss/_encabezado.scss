@@ -1,0 +1,26 @@
+.encabezado{
+    grid-area: encabezado;
+    .contMarca{
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+        .marca{
+            width: auto;
+            font-size: 35px ;
+            color: black;
+            font-style: italic;
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: $colorPrincipal;
+        }
+     
+    }
+    .titulo{
+        text-align: center;
+        font-size: 25px;
+        background-color: blanchedalmond;
+        color: $colorPrincipal;
+        margin-top: 10px;         
+    }
+}

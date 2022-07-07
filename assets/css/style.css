@@ -1,181 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.container-fluid{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows:  40px auto auto 10px;
-    grid-template-areas: "navegador navegador navegador"
-                         "encabezado encabezado encabezado"
-                         "principal principal principal"
-                         "piePagina piePagina piePagina";
+.navegador {
+  grid-area: navegador;
+  display: flex;
+  background-color: #C75100;
+  justify-content: center;
+  align-items: center;
+}
+.navegador .barraNavegacion {
+  display: flex;
+  list-style: none;
+}
+.navegador .barraNavegacion li {
+  background-color: #C75100;
+}
+.navegador .barraNavegacion li a {
+  color: white;
+  padding: 5px;
+  font-size: 22px;
+  text-decoration: none;
 }
 
-.navegador{
-    grid-area: navegador;
-    display: flex;
-    background-color: #C75100;
-    justify-content: center;
-    align-items: center;
+.encabezado {
+  grid-area: encabezado;
+}
+.encabezado .contMarca {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+.encabezado .contMarca .marca {
+  width: auto;
+  font-size: 35px;
+  color: black;
+  font-style: italic;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  background-color: #C75100;
+}
+.encabezado .titulo {
+  text-align: center;
+  font-size: 25px;
+  background-color: blanchedalmond;
+  color: #C75100;
+  margin-top: 10px;
 }
 
-.barraNavegacion{
-    display: flex;
-    list-style: none;
+.principal {
+  grid-area: principal;
+}
+.principal .subtitulo {
+  text-align: center;
+  font-size: 20px;
+  color: #C75100;
+}
+.principal .productos {
+  text-align: center;
+}
+.principal .productos .nombreProducto {
+  font-size: 20px;
+  color: #C75100;
+  margin: 15px;
+  text-decoration: underline;
+}
+.principal .productos .img-fluid {
+  width: 80%;
+  transition: all 1s;
+}
+.principal .productos .img-fluid:hover {
+  transform: translate(10px, 10px) scale(1.1);
+}
+.principal .btn {
+  background-color: #C75100;
+  color: white;
+}
+.principal .botones {
+  display: flex;
+}
+.principal .botones .boton {
+  background-color: #C75100;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
 }
 
-.barraNavegacion li{
-    background-color: #C75100;
+.piePagina {
+  grid-area: piePagina;
 }
-
-.barraNavegacion li a{
-    color: white;
-    padding: 5px;
-    font-size: 22px;
-    text-decoration: none;
+.piePagina .copy {
+  color: antiquewhite;
+  background-color: #C75100;
+  text-align: center;
+  width: 100%;
 }
-
-.encabezado{
-    grid-area: encabezado;
-}
-
-.contMarca{
-    display: flex;
-    justify-content: center;
- 
-}
-
-.marca{
-    width: auto;
-    font-size: 35px ;
-    color: black;
-    font-style: italic;
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
-    background-color: #C75100;
-}
-
-.principal{
-    grid-area: principal;
-    
-}
-
-.titulo{
-    text-align: center;
-    font-size: 25px;
-    background-color: blanchedalmond;
-    color: #C75100;  
-}
-
-.subtitulo{
-    text-align: center;
-    font-size: 15px;
-    color: #C75100;
-}
-
-.productos{
-    text-align: center;
-}
-
-.nombreProducto{
-    font-size: 20px;
-    color: #C75100;
-    margin: 15px;
-    text-decoration: underline;
-    
-}
-
-.img-fluid{
-    width: 80%;
-    transition: all 1s;
-}
-
-.img-fluid:hover{
-    transform: translate(10px,10px) scale(1.1);
-}
-
-.btn{
-    background-color: #C75100;
-    color: white;
-}
-
-.botones{
-    display: flex;
-}
-
-.boton{
-    background-color: #C75100;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-}
-
-.boton:active{
-    background-color: black;
-}
-
-
-.piePagina{
-    grid-area: piePagina;
-}
-
-.copy{
-    color: antiquewhite;
-    background-color: #C75100;
-    text-align: center;
-    width: 100%;
-}
-
-
-
-
-
-@media(min-width:1200px){
-.contenedor{
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 60px auto auto 10px;
-    grid-template-areas: "navegador navegador navegador navegador"
-                         "encabezado encabezado encabezado encabezado"
-                         "principal principal principal principal"
-                         "piePagina piePagina piePagina piePagina";
-    }   
-
-    .barraNavegacion li a{
-        color: white;
-        padding: 20px;
-        font-size: 28px;
-        text-decoration: none;
-    }
-
-    .marca{
-        font-size: 50px ;
-       }
-
-    .titulo{
-        font-size: 35px;  
-    }
-
-    .subtitulo{
-        font-size: 20px;
-    }
-
-    .producto{
-        width: 400px;
-        padding: 10px;
-    }
-
-    .nombreProducto{
-        font-size: 23px;
-    }
-    
-    .copy{
-    font-size: 20px;
-    }
-
-    }
