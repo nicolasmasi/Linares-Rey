@@ -1,0 +1,21 @@
+.boton1{
+    display: flex;
+    justify-content: center;     
+    color: white;   
+    background-color: $colorPrincipal;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+}
+
+.botones{
+    display: flex;
+    .boton{
+        background-color: map-get($boton , colorFondo );
+        padding: map-get($boton , padding );
+        border-radius: map-get($boton , radio );
+        color: map-get($boton , color);
+        margin: map-get($boton , margen );
+        text-decoration: none;
+    }
+} 

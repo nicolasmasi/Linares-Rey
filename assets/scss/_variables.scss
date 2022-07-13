@@ -1,2 +1,10 @@
 $colorPrincipal: #C75100;
 $tamanioSubtitulo: 20px;
+
+$boton:(
+    colorFondo: $colorPrincipal,
+    padding: 10px,
+    radio: 5px,
+    color: white,
+    margen: 10px,
+)

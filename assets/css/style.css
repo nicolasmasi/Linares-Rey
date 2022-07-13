@@ -74,20 +74,27 @@
 .principal .productos .img-fluid:hover {
   transform: translate(10px, 10px) scale(1.1);
 }
-.principal .btn {
-  background-color: #C75100;
+
+.boton1 {
+  display: flex;
+  justify-content: center;
   color: white;
+  background-color: #C75100;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 0;
 }
-.principal .botones {
+
+.botones {
   display: flex;
 }
-.principal .botones .boton {
+.botones .boton {
   background-color: #C75100;
   padding: 10px;
   border-radius: 5px;
   color: white;
+  margin: 10px;
   text-decoration: none;
-  margin-bottom: 8px;
 }
 
 .piePagina {
