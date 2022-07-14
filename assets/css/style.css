@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+.boton-principal {
+  background-color: #C75100;
+}
+
+.boton-secundario {
+  background-color: rgb(14, 10, 238);
+}
+
+.boton-terciario {
+  background-color: rgb(18, 206, 219);
+}
+
 .navegador {
   grid-area: navegador;
   display: flex;
@@ -83,18 +95,20 @@
   text-decoration: none;
   border-radius: 5px;
   border: 0;
+  margin: 10px;
+  width: 100px;
+  height: 45px;
 }
 
-.botones {
-  display: flex;
-}
-.botones .boton {
-  background-color: #C75100;
+.boton, .boton-principal, .boton-secundario, .boton-terciario {
   padding: 10px;
   border-radius: 5px;
   color: white;
   margin: 10px;
   text-decoration: none;
+  text-align: center;
+  width: 100px;
+  height: 45px;
 }
 
 .piePagina {

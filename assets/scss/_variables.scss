@@ -1,10 +1,23 @@
 $colorPrincipal: #C75100;
 $tamanioSubtitulo: 20px;
 
-$boton:(
-    colorFondo: $colorPrincipal,
+
+$colores:(
+    principal:#C75100,
+    secundario:rgb(14, 10, 238),
+    terciario:rgb(18, 206, 219),
+);
+
+$btn:(
     padding: 10px,
     radio: 5px,
     color: white,
     margen: 10px,
-)
+);
+
+@each $key, $var in $colores {
+    .boton-#{$key}{
+        @extend .boton;
+        background-color: $var;
+    }
+};

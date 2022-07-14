@@ -6,16 +6,17 @@
     text-decoration: none;
     border-radius: 5px;
     border: 0;
+    margin: 10px;
+    @include medidas(100px,45px)
 }
 
-.botones{
-    display: flex;
+
     .boton{
-        background-color: map-get($boton , colorFondo );
-        padding: map-get($boton , padding );
-        border-radius: map-get($boton , radio );
-        color: map-get($boton , color);
-        margin: map-get($boton , margen );
+        padding: map-get($btn , padding );
+        border-radius: map-get($btn , radio );
+        color: map-get($btn , color );
+        margin: map-get($btn , margen );
         text-decoration: none;
+        text-align: center;
+        @include medidas(100px,45px)
     }
-} 
